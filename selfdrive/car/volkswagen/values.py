@@ -246,6 +246,24 @@ CAR_INFO: Dict[str, Union[VWCarInfo, List[VWCarInfo]]] = {
     VWCarInfo("Volkswagen Tiguan 2018-24"),
     VWCarInfo("Volkswagen Tiguan eHybrid 2021-23"),
   ],
+  CAR.TIGUAN_MK2:{
+    (Ecu.fwrRadar, 0x757, None): [
+      b'\xf1\x875Q0907572R \xf1\x890771',
+    ],
+    (Ecu.eps, 0x712, None): [
+      b'\xf1\x875QM907144D \xf1\x891063\xf1\x82\x000_A1080_OM',
+    ],
+    (Ecu.srs, 0x715, None): [
+      b'\xf1\x875Q0959655CB\xf1\x890421\xf1\x82\x1314171231313500314642021650169333613100',
+    ],
+    (Ecu.engine, 0x7E0, None): [
+      b'\xf1\x8704E906024BG\xf1\x891057',
+    ],
+    (Ecu.engine, 0x7E1, None): [
+      b'\xf1\x8709S927158CK\xf1\x893770',
+    ],
+  },
+  
   CAR.TOURAN_MK2: VWCarInfo("Volkswagen Touran 2016-23"),
   CAR.TRANSPORTER_T61: [
     VWCarInfo("Volkswagen Caravelle 2020"),
